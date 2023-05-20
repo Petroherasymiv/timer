@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<style>
+body{
+font-family: 'digital-7';
+}
+</style>
+<body>
+<section class="dateClock">
+    <div class="dateBox"></div>
+    <div class="digital-clock">12:00:00</div>
+</section>
+<section class="stopWatch">
+        <form class="setStopWatch" name="formMain">
+            <div class="watcher">
+                <span id="hour">00</span><span>:</span><span id="minute">00</span><span>:</span><span
+                    id="second">00</span><span>:</span><span id="millisecond">000</span>
+            </div>
+            <div class="buttStopWatch">
+                <button class="buttonStop" type="button" name="start">START</button>
+                <button class="buttonStop" id="buttonLoop" type="button" name="loop">LOOP</button>
+                <button class="buttonStop" type="button" name="pause">STOP</button>
+                <button class="buttonStop" type="button" name="reset">RESET</button>
+            </div>
+        </form>
+    <div id="boxStopWatch" class="watchBoxStopWatch"></div>
+</section>
+<section class="timer">
+    <div class="setTimer">
+        <div class="setTimerBox">25</div>
+        <form>
+            <input class="buttPlus buttonStop" type="button" value="+">
+            <input class="buttMinus buttonStop" type="button" value="-">
+        </form>
+
+    </div>
+    <div class="watchBox">
+        <p id="countdown">00:00</p>
+        <form name="watchBoxMain">
+            <input class="buttonStop" type="button" value="START" name="startTimer">
+            <input class="buttonStop" type="button" value="STOP" name="stopTimer">
+            <input class="buttonStop" type="button" value="RESET" name="resetTimer">
+        </form>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+
+</html>
